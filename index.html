@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn authentic Brazilian Forró dance in Melbourne CBD. Professional instructors, beginner-friendly classes, vibrant community. Book your free trial class today!">
+    <meta name="keywords" content="forró dance Melbourne, Brazilian dance classes, partner dancing Melbourne, dance lessons CBD, forró universitário">
+    <title>Melbourne Forró Dance Studio | Brazilian Dance Classes in CBD</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+        /* Critical CSS - Inline for fastest initial paint */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Brazilian flag-inspired colors */
+            --brazil-green: #009739;
+            --brazil-yellow: #FFCC00;
+            --brazil-blue: #002776;
+            
+            /* Professional palette */
+            --primary: #009739;
+            --primary-dark: #006b2a;
+            --accent: #FFCC00;
+            --accent-hover: #e6b800;
+            --secondary: #002776;
+            --text-primary: #2c3e50;
+            --text-secondary: #5a6c7d;
+            --white: #ffffff;
+            --gray-light: #f8f9fa;
+            --gray-lighter: #fafbfc;
+            --success: #27ae60;
+            --border: #e1e4e8;
+            
+            /* Shadows for depth */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.15);
+            --shadow-hover: 0 20px 60px rgba(0,157,55,0.2);
+        }
+
+        /* Typography System */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 14px rgba(0,157,55,0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,157,55,0.35);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-accent {
+            background: var(--accent);
+            color: var(--secondary);
+            font-weight: 700;
+            box-shadow: 0 4px 14px rgba(255,204,0,0.35);
+        }
+
+        .btn-accent:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255,204,0,0.45);
+        }
+
+        /* Header Styles */
+        .announcement-bar {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .announcement-bar a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        header {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: box-shadow 0.3s;
+        }
+
+        header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+            background: linear-gradient(135deg, var(--brazil-green), var(--brazil-yellow));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            margin-left: 20px;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-primary);
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Hero Section with Brazilian energy */
+        .hero {
+            background: linear-gradient(135deg, rgba(0,151,57,0.95), rgba(0,39,118,0.95)), 
+                        url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIyIiBmaWxsPSIjRkZDQzAwIiBvcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjYSkiLz48L3N2Zz4=');
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 span {
+            color: var(--accent);
+        }
+
+        .hero-text p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: 30px;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .trust-badge-icon {
+            width: 20px;
+            height: 20px;
+            background: rgba(255,204,0,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+        }
+
+        .hero-video {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .video-container {
+            background: linear-gradient(135deg, var(--gray-light), var(--gray-lighter));
+            border-radius: 12px;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 30px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Value Props Section */
+        .value-props {
+            padding: 80px 0;
+            background: var(--gray-lighter);
+        }
+
+        .value-props-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .value-prop {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .value-prop:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .value-prop-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .value-prop h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .value-prop p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Classes Section */
+        .classes {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+
+        .section-subtitle {
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .section-header h2 {
+            margin-bottom: 20px;
+        }
+
+        .section-header h2 span {
+            color: var(--accent);
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 18px;
+        }
+
+        .class-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .tab-button {
+            padding: 12px 30px;
+            background: var(--gray-lighter);
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: var(--text-primary);
+        }
+
+        .tab-button.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .tab-button:hover:not(.active) {
+            background: var(--gray-light);
+        }
+
+        .class-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .class-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s;
+            display: none;
+        }
+
+        .class-card.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .class-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .class-card-header {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .class-card-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,204,0,0.1) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        .class-level {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: var(--secondary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .class-icon {
+            font-size: 60px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .class-card-body {
+            padding: 30px;
+        }
+
+        .class-card h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .class-card p {
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .class-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .class-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .class-features li::before {
+            content: '✓';
+            width: 20px;
+            height: 20px;
+            background: rgba(0,151,57,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .class-schedule {
+            background: var(--gray-lighter);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+
+        .schedule-title {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-day {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .schedule-time {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        /* Instructors Section */
+        .instructors {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--gray-lighter) 0%, white 100%);
+        }
+
+        .instructor-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .instructor-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s;
+        }
+
+        .instructor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .instructor-avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 50px;
+            position: relative;
+        }
+
+        .instructor-avatar::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 30px;
+            height: 30px;
+            background: var(--accent);
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .instructor-card h3 {
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .instructor-role {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .instructor-bio {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .instructor-certs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cert-badge {
+            padding: 5px 10px;
+            background: var(--gray-lighter);
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            background: var(--gray-lighter);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            font-size: 80px;
+            color: var(--primary);
+            opacity: 0.1;
+            font-family: Georgia, serif;
+        }
+
+        .stars {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .star {
+            color: var(--accent);
+            font-size: 18px;
+        }
+
+        .testimonial-text {
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .author-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .author-class {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+            background: var(--gray-lighter);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .pricing-card.featured {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: var(--secondary);
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        .pricing-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-price {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .pricing-price sup {
+            font-size: 20px;
+        }
+
+        .pricing-period {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,204,0,0.1) 0%, transparent 50%);
+            animation: rotate 60s linear infinite;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+
+        .cta p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 60px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 30px;
+            color: var(--primary);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .contact-details p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        .map-container {
+            background: var(--gray-lighter);
+            border-radius: 16px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            margin-top: 30px;
+        }
+
+        .contact-form {
+            background: var(--gray-lighter);
+            border-radius: 16px;
+            padding: 40px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0,151,57,0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .privacy-note {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .privacy-note a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-column h4 {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p {
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .footer-bottom-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            box-shadow: 0 5px 25px rgba(37,211,102,0.4);
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 999;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 35px rgba(37,211,102,0.5);
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            color: var(--text-primary);
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+            white-space: nowrap;
+            font-size: 14px;
+            font-weight: 500;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Loading animation for buttons */
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .btn.loading {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        .btn.loading::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid transparent;
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Success state */
+        .success-message {
+            background: var(--success);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: fadeInUp 0.5s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .trust-badges {
+                justify-content: center;
+            }
+
+            .value-props-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .class-cards,
+            .instructor-grid,
+            .testimonial-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow-lg);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-cta {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+
+            .hero {
+                min-height: 70vh;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .value-props-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Focus states for accessibility */
+        a:focus,
+        button:focus,
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 3px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        /* Skip to main content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            z-index: 9999;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        🎉 Summer Special: Get 50% off your first month! Limited spots available. <a href="#pricing">Claim Offer →</a>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="/" class="logo">
+                <span class="logo-icon">🕺</span>
+                Melbourne Forró
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="nav-cta"><a href="#book-trial" class="btn btn-accent">Free Trial</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1>Experience the Joy of <span>Brazilian Forró</span> in Melbourne</h1>
+                        <p>Join Melbourne's most vibrant dance community. Learn authentic Brazilian Forró from expert instructors in a welcoming, fun environment.</p>
+                        <div class="hero-buttons">
+                            <a href="#book-trial" class="btn btn-accent">Start Free Trial</a>
+                            <a href="#classes" class="btn btn-secondary" style="background: white; color: var(--primary);">View Classes</a>
+                        </div>
+                        <div class="trust-badges">
+                            <div class="trust-badge">
+                                <span class="trust-badge-icon">✓</span>
+                                <span>No partner needed</span>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="trust-badge-icon">✓</span>
+                                <span>Beginner friendly</span>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="trust-badge-icon">✓</span>
+                                <span>CBD location</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-video">
+                        <div class="video-container">
+                            <div class="play-button">▶</div>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Happy Dancers</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">4.9★</div>
+                                <div class="stat-label">Google Rating</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">Classes/Week</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Propositions -->
+        <section class="value-props">
+            <div class="container">
+                <div class="value-props-grid">
+                    <div class="value-prop">
+                        <div class="value-prop-icon">🎓</div>
+                        <h3>Expert Teaching</h3>
+                        <p>Learn from certified instructors with years of experience</p>
+                    </div>
+                    <div class="value-prop">
+                        <div class="value-prop-icon">🤝</div>
+                        <h3>No Partner Needed</h3>
+                        <p>We rotate partners so everyone gets to dance</p>
+                    </div>
+                    <div class="value-prop">
+                        <div class="value-prop-icon">🎉</div>
+                        <h3>Social Events</h3>
+                        <p>Weekly socials and monthly special events</p>
+                    </div>
+                    <div class="value-prop">
+                        <div class="value-prop-icon">📍</div>
+                        <h3>CBD Location</h3>
+                        <p>Easy access via public transport</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classes Section -->
+        <section class="classes" id="classes">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Our Classes</div>
+                    <h2>Find Your Perfect <span>Dance Level</span></h2>
+                    <p>From complete beginners to advanced dancers, we have the right class for you</p>
+                </div>
+                
+                <div class="class-tabs">
+                    <button class="tab-button active" data-level="all">All Classes</button>
+                    <button class="tab-button" data-level="beginner">Beginner</button>
+                    <button class="tab-button" data-level="intermediate">Intermediate</button>
+                    <button class="tab-button" data-level="advanced">Advanced</button>
+                </div>
+
+                <div class="class-cards">
+                    <div class="class-card active" data-level="beginner">
+                        <div class="class-card-header">
+                            <span class="class-level">Beginner</span>
+                            <div class="class-icon">🎵</div>
+                        </div>
+                        <div class="class-card-body">
+                            <h3>Forró Fundamentals</h3>
+                            <p>Perfect for absolute beginners! Learn basic steps, rhythm, and the joy of partner connection in a supportive environment.</p>
+                            <ul class="class-features">
+                                <li>Basic steps and footwork</li>
+                                <li>Lead and follow techniques</li>
+                                <li>Music appreciation</li>
+                                <li>Social dance etiquette</li>
+                            </ul>
+                            <div class="class-schedule">
+                                <div class="schedule-title">Weekly Schedule</div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Monday</span>
+                                    <span class="schedule-time">7:00 PM</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Wednesday</span>
+                                    <span class="schedule-time">6:30 PM</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Saturday</span>
+                                    <span class="schedule-time">2:00 PM</span>
+                                </div>
+                            </div>
+                            <a href="#book-trial" class="btn btn-primary" style="width: 100%;">Book Trial Class</a>
+                        </div>
+                    </div>
+
+                    <div class="class-card active" data-level="intermediate">
+                        <div class="class-card-header">
+                            <span class="class-level">Intermediate</span>
+                            <div class="class-icon">💃</div>
+                        </div>
+                        <div class="class-card-body">
+                            <h3>Forró Flow</h3>
+                            <p>Expand your repertoire with complex patterns, styling, and musical interpretation. Build confidence on the dance floor.</p>
+                            <ul class="class-features">
+                                <li>Advanced turn patterns</li>
+                                <li>Musical interpretation</li>
+                                <li>Personal styling</li>
+                                <li>Complex combinations</li>
+                            </ul>
+                            <div class="class-schedule">
+                                <div class="schedule-title">Weekly Schedule</div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Tuesday</span>
+                                    <span class="schedule-time">7:30 PM</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Thursday</span>
+                                    <span class="schedule-time">7:30 PM</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Sunday</span>
+                                    <span class="schedule-time">3:00 PM</span>
+                                </div>
+                            </div>
+                            <a href="#book-trial" class="btn btn-primary" style="width: 100%;">Book Trial Class</a>
+                        </div>
+                    </div>
+
+                    <div class="class-card active" data-level="advanced">
+                        <div class="class-card-header">
+                            <span class="class-level">Advanced</span>
+                            <div class="class-icon">⭐</div>
+                        </div>
+                        <div class="class-card-body">
+                            <h3>Forró Mastery</h3>
+                            <p>Master advanced techniques, develop your unique style, and prepare for performances and competitions.</p>
+                            <ul class="class-features">
+                                <li>Performance techniques</li>
+                                <li>Competition preparation</li>
+                                <li>Advanced musicality</li>
+                                <li>Creative improvisation</li>
+                            </ul>
+                            <div class="class-schedule">
+                                <div class="schedule-title">Weekly Schedule</div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Wednesday</span>
+                                    <span class="schedule-time">8:30 PM</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Friday</span>
+                                    <span class="schedule-time">8:00 PM</span>
+                                </div>
+                            </div>
+                            <a href="#book-trial" class="btn btn-primary" style="width: 100%;">Book Trial Class</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section class="instructors" id="instructors">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Our Team</div>
+                    <h2>Meet Your <span>Expert Instructors</span></h2>
+                    <p>Learn from passionate professionals who bring the authentic spirit of Brazil to Melbourne</p>
+                </div>
+                <div class="instructor-grid">
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">CS</div>
+                        <h3>Carlos Silva</h3>
+                        <div class="instructor-role">Lead Instructor & Founder</div>
+                        <p class="instructor-bio">Originally from Recife, Brazil. 15+ years teaching Forró internationally. Specializes in traditional and modern styles.</p>
+                        <div class="instructor-certs">
+                            <span class="cert-badge">Certified Instructor</span>
+                            <span class="cert-badge">Competition Judge</span>
+                        </div>
+                    </div>
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">SC</div>
+                        <h3>Sophie Chen</h3>
+                        <div class="instructor-role">Senior Instructor</div>
+                        <p class="instructor-bio">Melbourne native who discovered Forró in Brazil. Specializes in beginner classes and women's styling workshops.</p>
+                        <div class="instructor-certs">
+                            <span class="cert-badge">10 Years Experience</span>
+                            <span class="cert-badge">Styling Expert</span>
+                        </div>
+                    </div>
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">MS</div>
+                        <h3>Marco Santos</h3>
+                        <div class="instructor-role">Guest Instructor</div>
+                        <p class="instructor-bio">International performer and teacher. Brings advanced techniques and performance skills from São Paulo's dance scene.</p>
+                        <div class="instructor-certs">
+                            <span class="cert-badge">World Champion</span>
+                            <span class="cert-badge">Choreographer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Student Reviews</div>
+                    <h2>What Our <span>Dancers Say</span></h2>
+                    <p>Join hundreds of happy dancers who've discovered their passion for Forró</p>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"I was nervous about starting dance classes, but the instructors made me feel so welcome. Now I can't imagine my week without Forró!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">EH</div>
+                            <div class="author-info">
+                                <span class="author-name">Emma Harrison</span>
+                                <span class="author-class">Beginner Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"The community here is amazing! I've made so many friends and the social events are always so much fun. Best decision I've made!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DL</div>
+                            <div class="author-info">
+                                <span class="author-name">David Lee</span>
+                                <span class="author-class">Intermediate Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"Professional instruction with authentic Brazilian energy. Carlos and the team really know their stuff and are great teachers!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MP</div>
+                            <div class="author-info">
+                                <span class="author-name">Maria Patel</span>
+                                <span class="author-class">Advanced Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Pricing Plans</div>
+                    <h2>Choose Your <span>Dance Journey</span></h2>
+                    <p>Flexible plans to suit your schedule and budget</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Casual</h3>
+                        <div class="pricing-price"><sup>$</sup>25</div>
+                        <div class="pricing-period">per class</div>
+                        <ul class="pricing-features">
+                            <li>Drop-in to any class</li>
+                            <li>No commitment required</li>
+                            <li>Access to social events</li>
+                            <li>Beginner friendly</li>
+                        </ul>
+                        <a href="#book-trial" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                    </div>
+                    <div class="pricing-card featured">
+                        <h3 class="pricing-title">Monthly</h3>
+                        <div class="pricing-price"><sup>$</sup>120</div>
+                        <div class="pricing-period">per month</div>
+                        <ul class="pricing-features">
+                            <li>Unlimited classes</li>
+                            <li>Free social events</li>
+                            <li>10% off workshops</li>
+                            <li>Priority booking</li>
+                            <li>Free trial class</li>
+                        </ul>
+                        <a href="#book-trial" class="btn btn-primary" style="width: 100%;">Start Free Trial</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Term Pass</h3>
+                        <div class="pricing-price"><sup>$</sup>300</div>
+                        <div class="pricing-period">3 months</div>
+                        <ul class="pricing-features">
+                            <li>Best value offer</li>
+                            <li>Unlimited classes</li>
+                            <li>All social events free</li>
+                            <li>20% off workshops</li>
+                            <li>Guest passes included</li>
+                        </ul>
+                        <a href="#book-trial" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Dancing?</h2>
+                    <p>Join Melbourne's most vibrant dance community today. Your first class is completely free!</p>
+                    <div class="cta-buttons">
+                        <a href="#book-trial" class="btn btn-accent">Claim Your Free Trial</a>
+                        <a href="#contact" class="btn btn-secondary" style="background: white; color: var(--primary);">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Get in Touch</div>
+                    <h2>Visit Our <span>Dance Studio</span></h2>
+                    <p>Located in the heart of Melbourne CBD, easily accessible by public transport</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>123 Swanston Street<br>Melbourne CBD, VIC 3000<br>Above the Coffee House</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+61400123456">0400 123 456</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:dance@melbourneforro.com.au">dance@melbourneforro.com.au</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-details">
+                                <h4>Studio Hours</h4>
+                                <p>Monday - Friday: 6:00 PM - 10:00 PM<br>
+                                Saturday: 2:00 PM - 8:00 PM<br>
+                                Sunday: 3:00 PM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                            Interactive Map
+                        </div>
+                    </div>
+                    <div class="contact-form" id="book-trial">
+                        <h3>Book Your Free Trial Class</h3>
+                        <form id="trialForm">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="experience">Dance Experience *</label>
+                                    <select id="experience" name="experience" required>
+                                        <option value="">Select your level</option>
+                                        <option value="never">Never danced before</option>
+                                        <option value="beginner">Beginner (< 6 months)</option>
+                                        <option value="intermediate">Intermediate (6 months - 2 years)</option>
+                                        <option value="advanced">Advanced (2+ years)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="classChoice">Preferred Class Time *</label>
+                                    <select id="classChoice" name="classChoice" required>
+                                        <option value="">Select a class</option>
+                                        <option value="mon-7pm">Monday 7:00 PM - Beginners</option>
+                                        <option value="wed-630pm">Wednesday 6:30 PM - Beginners</option>
+                                        <option value="sat-2pm">Saturday 2:00 PM - Beginners</option>
+                                        <option value="other">Other (we'll contact you)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="message">Questions or Comments</label>
+                                    <textarea id="message" name="message" placeholder="Tell us about your dance goals or ask any questions..."></textarea>
+                                </div>
+                            </div>
+                            <div class="form-footer">
+                                <div class="privacy-note">
+                                    By submitting, you agree to our <a href="#">Privacy Policy</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Book Free Trial</button>
+                            </div>
+                        </form>
+                        <div class="success-message" id="successMessage">
+                            🎉 Success! We've received your booking. Check your email for confirmation and next steps!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>
+                        <span class="logo-icon" style="background: var(--accent);">🕺</span>
+                        Melbourne Forró
+                    </h3>
+                    <p>Bringing the joy and energy of Brazilian dance to Melbourne since 2018. Join our vibrant community and discover the magic of Forró!</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                        <a href="#" class="social-link" aria-label="TikTok">♪</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#book-trial">Free Trial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Beginner's Guide</a></li>
+                        <li><a href="#">Dance Videos</a></li>
+                        <li><a href="#">Music Playlists</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Events Calendar</a></li>
+                        <li><a href="#">Social Nights</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Performances</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Melbourne Forró Dance Studio. All rights reserved. | ABN: 12 345 678 901</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="window.open('https://wa.me/61400123456?text=Hi! I\'m interested in Forró dance classes', '_blank')">
+        <span>💬</span>
+        <span class="whatsapp-tooltip">Chat with us on WhatsApp!</span>
+    </div>
+
+    <script>
+        // Performance optimization: Use requestAnimationFrame for smooth animations
+        let ticking = false;
+        function requestTick(callback) {
+            if (!ticking) {
+                requestAnimationFrame(callback);
+                ticking = true;
+            }
+        }
+
+        // Mobile menu toggle with accessibility
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenu.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            const isOpen = navMenu.classList.contains('active');
+            this.setAttribute('aria-expanded', isOpen);
+            
+            // Animate hamburger menu
+            const spans = this.querySelectorAll('span');
+            if (isOpen) {
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+            } else {
+                spans[0].style.transform = '';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = '';
+            }
+        });
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Header scroll effect with throttling
+        let lastScrollTop = 0;
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            requestTick(() => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                lastScrollTop = scrollTop;
+                ticking = false;
+            });
+        });
+
+        // Class tabs functionality
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const classCards = document.querySelectorAll('.class-card');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const level = this.getAttribute('data-level');
+                
+                // Update active button
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Show/hide cards with animation
+                classCards.forEach(card => {
+                    if (level === 'all' || card.getAttribute('data-level') === level) {
+                        card.classList.add('active');
+                    } else {
+                        card.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Form submission with validation and loading state
+        const trialForm = document.getElementById('trialForm');
+        const successMessage = document.getElementById('successMessage');
+
+        trialForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Add loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual API call)
+            setTimeout(() => {
+                // Show success message
+                successMessage.classList.add('show');
+                
+                // Reset form
+                this.reset();
+                
+                // Remove loading state
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+                
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            }, 1500);
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Play button functionality (video modal would go here)
+        document.querySelector('.play-button')?.addEventListener('click', function() {
+            alert('Video player would open here with a Forró demonstration video');
+        });
+
+        // Add loading=lazy to images for performance
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.setAttribute('loading', 'lazy');
+            });
+        });
+
+        // Service Worker registration for offline support (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {
+                    // Service worker registration failed, app still works online
+                });
+            });
+        }
+    </script>
+</body>
+</html>
